@@ -1,0 +1,21 @@
+
+### ping Aute servicio
+GET http://localhost:3000/ping
+
+### upload image
+POST http://localhost:3000/uploadImage
+Content-Type: application/json
+
+{
+    "namePhoto" : "wick.jpg",
+    "photo" : "" 
+}
+
+### download image in base64
+POST http://localhost:3000/downloadImage
+Content-Type: application/json
+
+{
+    "namePhoto" : "mibbyyo.jpg"
+}
+

@@ -1,0 +1,21 @@
+//---creacion del backend node-typescript-app
+//tener instalado node y npm 
+    npx gitignore node //para iniciar el gitignore
+    npm init -y //inicializar un proyecto de node
+    //instalar dependecias dependencias
+    npm i --save cors dotenv express morgan
+    npm i --save-dev tsc-watch nodemon @types/cors @types/dotenv @types/express @types/morgan 
+
+//instalar e inicializar typescript
+    //de froma global 
+    npm install -g typescript && tsc --init
+    //en el proyecto   
+    npm install typescript --save-dev && npx tsc --init 
+//RECOERDAR CAMBIAR EL rootdir Y EL outdir DEL tsconfig.json
+
+//agregar estos scripts al package.json
+    "start": "npx tsc && node dist/index.js",
+    "build": "npx tsc",
+    "dev": "tsc-watch --onSuccess \"nodemon dist/index.js\" ",
+
+//armar tu proyecto con la carpeta src como source
