@@ -47,7 +47,7 @@ export const uploadMp3 = (req: Request, res: Response) => {
     
     s3.upload(params, ( err: Error, data: aws.S3.ManagedUpload.SendData ) => {
         if ( err ) return res.status(500).json({ message: 'upload audio fail', error: err });
-        return res.status(200).json({ message: 'Download images succesfully', data });
+        return res.status(200).json({ message: 'upload audio succesfully', data });
     });
 };
 

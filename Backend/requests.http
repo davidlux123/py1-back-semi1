@@ -16,6 +16,6 @@ POST http://localhost:3000/downloadImage
 Content-Type: application/json
 
 {
-    "namePhoto" : "mibbyyo.jpg"
+    "namePhoto" : "chalana.mp3"
 }
 
